@@ -46,7 +46,7 @@ class ToDoListController: UITableViewController {
         let alert = UIAlertController(title: "Add ToDoList Item", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             self.itemArray.append(textField.text!)
-            self.defaults.set(self.itemArray, forKey: "ToDolistArray")
+            self.defaults.set(self.itemArray, forKey: "ToDoListArray")
             self.tableView.reloadData()
             print(textField.text!)
         }
